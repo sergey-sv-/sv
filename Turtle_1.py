@@ -14,4 +14,5 @@ for i in range(10, 100, 10):
     turtle.penup()
     turtle.setpos(-i / 2, -i / 2)
     turtle.pendown()
+
 turtle.exitonclick()
