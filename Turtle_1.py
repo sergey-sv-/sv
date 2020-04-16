@@ -4,8 +4,8 @@ turtle.shape('turtle')
 turtle.speed(0)
 
 for i in range(1, 1000, 1):
-    turtle.forward(i * 0.001)
-    turtle.left(1)
+    turtle.forward(i*2)
+    turtle.left(90)
 
 # 10 Square drawing
 # for i in range(10, 100, 10):
