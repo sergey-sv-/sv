@@ -1,5 +1,5 @@
 import turtle
-
+import math
 turtle.shape('turtle')
 turtle.speed(0)
 
@@ -36,16 +36,18 @@ turtle.speed(0)
 
 # Multi Polygon drawing
 a = 50
-b = 90
 sides = 3
-for it in range(1, 10, 1):
+for iteration in range(1, 10, 1):
+    k = 2 * math.sin(math.pi / sides)
+    z = a / k
+    turtle.pencolor('blue')
+    turtle.setpos(z, 0)
+    turtle.left(180 / sides)
+    turtle.pencolor('black')
     for i in range(sides):
+        print(360 / sides)  # test string
         turtle.forward(a)
-        z = 360 / sides
-        turtle.left(z)
-    turtle.penup()
-    turtle.setpos(-a, 0)
-    turtle.pendown()
+        turtle.left(360 / sides)
     a += 5
     sides += 1
 
